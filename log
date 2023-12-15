@@ -2,3 +2,6 @@
 - pouziti FREERTOS
 - funkce na cteni a spojeni CAN zprav
 - funkce na delni a posilani CAN zprav 
+
+2023-12-15
+- checksum funkce (podle https://github.com/dji-sdk/RoboMaster-SDK)

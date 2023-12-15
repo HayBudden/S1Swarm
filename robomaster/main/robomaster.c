@@ -11,15 +11,21 @@
 
 void app_main(void)
 {
-    xTaskCreate(twai_init, "CAN Init", 8196, NULL, 2, NULL);
 
-    // for(int k = 0; k < 100; k++){
+    xTaskCreate(twai_init, "CAN Init", 8196, NULL, 2, NULL);
+    xTaskCreate(twai_send, "CAN Send", 8196, NULL, 1, NULL);
+
+        // for(int k = 0; k < 100; k++){
     //     printf("command_number = %i, ",k);
     //     send_command(0);
     //     printf("\n");
     // }
+    
+    fire_blaster();
 
-    xTaskCreate(twai_read, "CAN Read", 8196, NULL, 2, NULL);
+    // xTaskCreate(twai_read, "CAN Read", 8196, NULL, 2, NULL);
 
     while(1){}
 }
+
+
