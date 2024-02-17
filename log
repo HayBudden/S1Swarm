@@ -9,3 +9,6 @@
 2024-01-19
 - robot opraven
 - CAN bus zprovoznen - strelba, motory kol
+
+2024-02-17
+- periodicke posilani CAN zprav - nahrada PC na lafete
